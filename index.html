@@ -2,78 +2,83 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="api-test-tool.css" rel="stylesheet" type="text/css" />
 	<script src="api-test-tool.js" type="text/javascript"></script>
 	<script src="json2.js" type="text/javascript"></script>
 </head>
 <body>
 
-<div id="api_tool_wrapper">
-	<div class="api_tool_header">
+<h1 class="heading">
+	API Test Tool
+</h1>
+
+<div id="api_test_tool_wrapper">
+	<div class="api_test_tool_header">
 		<h1>
 			API Method:
 		</h1>
 		
 		<script type="text/javascript">
-			api_tool.init();
+			API_Test_Tool.init();
 		</script>
 		
 		<br class="clear" />
 	</div>
 	
-	<div id="api_tool_stripe">
-		<input id="api_tool_cake" type="text" onfocus="this.select();" />
+	<div id="api_test_tool_query_container">
+		<input id="api_test_tool_query" type="text" onfocus="this.select();" />
 		
 		<br class="clear" />
 	</div>
 	
-	<div id="api_tool_left">
-		<div id="api_tool_pie">
-			<h2 class="api_tool_welcome">
+	<div id="api_test_tool_left">
+		<div id="api_test_tool_method_fields">
+			<h2 class="api_test_tool_welcome">
 				Welcome
 			</h2>
 			
-			<div class="api_tool_row">
+			<div class="api_test_tool_row">
 				This tool will allow you to test the Brightcove Media Read API methods.
 			</div>
 		</div>
 		
-		<div id="api_tool_juice">
-			<div class="api_tool_row">
+		<div id="api_test_tool_dto_fields">
+			<div class="api_test_tool_row">
 				On the top left of this page, you"ll notice a drop-down menu containing API methods grouped by which media type they relate to; videos or playlists. To get started, select the method you would like to try out. You'll need your Brightcove read API token handy, as you'll need to enter it in the resulting form.
 			</div>
 			
-			<div class="api_tool_row">
+			<div class="api_test_tool_row">
 				Choosing methods causes forms on the page to dynamically update, making it clear which parameters can, and need, to be specified. As the values of these parameters are altered, the results of the API call will appear in a formatted tree view in the "return" box to the right, and the URL used to get that data will appear in the header of the page.
 			</div>
 			
-			<div class="api_tool_row">
+			<div class="api_test_tool_row">
 				The tree view allows you to expand and collapse sections of the return in order to traverse it easily and inspect the data returned. This view can also be toggled to show the exact return data by clicking the "raw" link in the header of the return box.
 			</div>
 		</div>
 	</div>
 	
-	<div id="api_tool_cookbook" style="display:none;"></div>
+	<div id="api_test_tool_tip" style="display:none;"></div>
 	
-	<div id="api_tool_right">
-		<div class="api_tool_heading">
-			<div class="api_tool_state" onclick="api_tool.raw(); return false;" id="api_tool_steak">raw</div>
-			<div class="api_tool_state" onclick="api_tool.expand_all(); return false;">+</div>
-			<div class="api_tool_state" onclick="api_tool.collapse_all(); return false;">&ndash;</div>
+	<div id="api_test_tool_right">
+		<div class="api_test_tool_heading">
+			<div class="api_test_tool_state" onclick="api_tool.raw(); return false;" id="api_test_tool_format">raw</div>
+			<div class="api_test_tool_state" onclick="api_tool.expand_all(); return false;">+</div>
+			<div class="api_test_tool_state" onclick="api_tool.collapse_all(); return false;">&ndash;</div>
 			
 			<h2>
 				Return
 			</h2>
 		</div>
 		
-		<div id="api_tool_ice_cream">
-			<div class="api_tool_nest-10">
+		<div id="api_test_tool_formatted">
+			<div class="api_test_tool_nest-10">
 				API return data will appear here.
 			</div>
 		</div>
 		
-		<pre id="api_tool_cookies" style="display:none;"></pre>
+		<pre id="api_test_tool_raw" style="display:none;"></pre>
 		
-		<iframe id="api_tool_berries" style="display:none;" src="about:blank"></iframe>
+		<iframe id="api_test_tool_mrss" style="display:none;" src="about:blank"></iframe>
 	</div>
 	
 	<br class="clear" />

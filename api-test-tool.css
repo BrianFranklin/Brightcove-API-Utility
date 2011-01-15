@@ -1,0 +1,56 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+body { background: #fff; color: #3b3b3b; font-family: Helvetica, Verdana, Arial, sans-serif; font-size: 12px; line-height: 18px; margin: 0; padding: 20px; }
+h1.heading { color: #1b1b1b; font-size: 30px; line-height: 30px; margin: 0 auto 15px; width: 960px; }
+#api_test_tool_wrapper { margin: 0 auto; width: 960px; }
+#api_test_tool_wrapper a { color: inherit; text-decoration: none; }
+#api_test_tool_wrapper a:hover { text-decoration: underline; }
+#api_test_tool_wrapper .clear { clear: both; }
+#api_test_tool_wrapper h1 { -moz-border-radius-bottomleft: 0; -moz-border-radius-bottomright: 0; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; background: #b4b4b4; border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; color: #FFF; font-size: 12px; font-weight: bold; line-height: 20px; padding: 10px; text-transform: uppercase; }
+#api_test_tool_wrapper h2 { background: #b4b4b4; color: #FFF; font-size: 12px; font-weight: bold; line-height: 20px; margin: 0; padding: 10px; text-transform: uppercase; }
+#api_test_tool_wrapper .api_test_tool_header { -moz-border-radius: 3px; -webkit-border-radius: 3px; background: #F4F4F4; border-radius: 3px; margin: 0 0 20px; }
+#api_test_tool_wrapper .api_test_tool_header select { font-size: 12px; line-height: 12px; margin: 15px; }
+#api_test_tool_wrapper #api_test_tool_query_container { -moz-border-radius: 3px; -webkit-border-radius: 3px; background: #F4F4F4; border-radius: 3px; margin: 0 0 20px; }
+#api_test_tool_wrapper #api_test_tool_query_container input { background: #f4f4f4; border: 0; color: #3B3B3B; font-size: 12px; letter-spacing: 0.05em; line-height: 12px; margin: 15px; width: 920px; }
+#api_test_tool_wrapper #api_test_tool_left { float: left; margin: 0 20px 0 0; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields { background: #f4f4f4; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields { -moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px; background: #f4f4f4; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields h2:first-child { -moz-border-radius-bottomleft: 0; -moz-border-radius-bottomright: 0; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields .api_test_tool_row,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields .api_test_tool_row,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields .api_test_tool_field_row { border-top: 1px solid #ccc; color: #000; font-size: 12px; line-height: 18px; padding: 10px; width: 225px; }
+#api_test_tool_wrapper #api_test_tool_left .api_test_tool_para { padding: 15px !important; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields .api_test_tool_row { border: 0; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields div input,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields div select,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields div input,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields div select { color: #3B3B3B; float: right; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields div select,
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields div select { width: 85px; }
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_method_fields div input[type=text],
+#api_test_tool_wrapper #api_test_tool_left #api_test_tool_dto_fields div input[type=text] { border: 1px solid #ccc; width: 80px; }
+#api_test_tool_tip,
+#api_test_tool_right,
+#api_test_tool_right #api_test_tool_raw { -moz-border-radius-bottomleft: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-left-radius: 3px; -webkit-border-bottom-right-radius: 3px; background: #f4f4f4; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; float: right; width: 685px; }
+#api_test_tool_tip div { padding: 20px; }
+#api_test_tool_tip h2,
+#api_test_tool_right .api_test_tool_heading h2 { -moz-border-radius-bottomleft: 0; -moz-border-radius-bottomright: 0; -moz-border-radius-topleft: 3px; -moz-border-radius-topright: 3px; -webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0; -webkit-border-top-left-radius: 3px; -webkit-border-top-right-radius: 3px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-top-left-radius: 3px; border-top-right-radius: 3px; }
+#api_test_tool_right .api_test_tool_heading .api_test_tool_state { color: #FFF; cursor: pointer; float: right; font-size: 12px; letter-spacing: 0.05em; line-height: 20px; padding: 10px; }
+#api_test_tool_right #api_test_tool_formatted { padding: 0 15px 15px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_state { color: #FFF; cursor: pointer; float: right; font-size: 12px; letter-spacing: 0.05em; line-height: 22px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-10 { background: #59868b; color: #FFF; margin: 15px 0 1px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-30 { background: #77B3BA; color: #FFF; margin: 0 0 1px 20px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-50 { background: #ddd; margin: 0 0 1px 40px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-70 { background: #ccc; margin: 0 0 1px 60px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-90 { background: #bbb; margin: 0 0 1px 80px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-110 { background: #aaa; margin: 0 0 1px 100px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_formatted .api_test_tool_nest-130 { background: #999; margin: 0 0 1px 120px; padding: 5px 10px; }
+#api_test_tool_right #api_test_tool_raw { padding: 15px; white-space: pre-wrap; width: 655px; }
+#api_test_tool_right #api_test_tool_raw span { margin: 0 20px; }
+#api_test_tool_mrss { height: 400px; margin: 20px; width: 655px; }
