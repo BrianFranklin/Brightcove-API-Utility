@@ -1,5 +1,5 @@
 /**
- * Brightcove API Test Tool 1.1.0 (15 JANUARY 2011)
+ * Brightcove API Test Tool 1.1.1 (26 FEBRUARY 2011)
  * (Formerly known as Echove)
  *
  * REFERENCES:
@@ -45,7 +45,7 @@ var API_Test_Tool = new function () {
 	};
 	this.fields_video = ["name", "id", "referenceId", "accountId", "shortDescription", "longDescription", "FLVURL", "renditions", "creationDate", "publishedDate", "lastModifiedDate", "startDate", "endDate", "linkURL", "linkText", "tags", "videoStillURL", "thumbnailURL", "length", "economics", "cuePoints", "playsTotal", "playsTrailingWeek", "FLVFullLength", "videoFullLength"];
 	this.fields_playlist = ["id", "referenceId", "accountId", "name", "shortDescription", "videoIds", "videos", "playlistType", "thumbnailURL"];
-	this.parameters_video = ["token", "output", "page_size", "page_number", "sort_by", "sort_order", "fields", "get_item_count", "video_id", "reference_id", "video_ids", "reference_ids", "user_id", "campaign_id", "text", "and_tags", "or_tags", "video_fields", "from_date", "filter", "custom_fields", "media_delivery"];
+	this.parameters_video = ["token", "output", "page_size", "page_number", "sort_by", "sort_order", "fields", "get_item_count", "video_id", "reference_id", "video_ids", "reference_ids", "user_id", "campaign_id", "text", "and_tags", "or_tags", "video_fields", "from_date", "filter", "custom_fields", "media_delivery", "any", "all", "none", "exact"];
 	this.parameters_playlist = ["token", "output", "page_size", "page_number", "sort_by", "sort_order", "fields", "get_item_count", "playlist_id", "reference_id", "playlist_ids", "reference_ids", "player_id", "playlist_fields", "video_fields", "custom_fields", "media_delivery"];
 	this.options_video = [
 		{
@@ -124,6 +124,13 @@ var API_Test_Tool = new function () {
 			"optional": [1, 2, 3, 4, 5, 6, 7, 17, 18, 20, 21],
 			"exclusive": [],
 			"inclusive": []
+		},
+		{
+			"method": "search_videos",
+			"required": [0],
+			"optional": [1, 2, 3, 4, 5, 6, 7, 17, 20, 21, 25],
+			"exclusive": [],
+			"inclusive": [22,23,24]
 		}
 	];
 	this.options_playlist = [
@@ -296,6 +303,8 @@ var API_Test_Tool = new function () {
 
 							document.getElementById("api_test_tool_dto_fields").innerHTML = x;
 						} else if (z == "get_item_count") {
+							document.getElementById("api_test_tool_method_fields").innerHTML += "<div class='api_test_tool_row'><select onchange='API_Test_Tool.make();' id='api_test_tool_" + z + "'><option value='true'>True</option><option value='false'>False</option></select>" + q + ": </div>";
+						} else if (z == "exact") {
 							document.getElementById("api_test_tool_method_fields").innerHTML += "<div class='api_test_tool_row'><select onchange='API_Test_Tool.make();' id='api_test_tool_" + z + "'><option value='true'>True</option><option value='false'>False</option></select>" + q + ": </div>";
 						} else if (z == "output") {
 							document.getElementById("api_test_tool_method_fields").innerHTML += "<div class='api_test_tool_row'><select onchange='API_Test_Tool.make();' id='api_test_tool_" + z + "'><option value='json'>JSON</option><option value='mrss'>MRSS</option></select>" + q + ": </div>";
